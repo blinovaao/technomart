@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles/style.css" rel="stylesheet">
+  <title>Техномарт</title>
+</head>
+
+<body>
+  <div class="page-container">
+    <header class="header">
+      <div class="header-info">
+        <p class="header-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <address class="header-contacts">
+          <p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a class="contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </address>
+      </div>
+
+      <div class="header-profile">
+        <a class="header-logo" href="#" aria-current="page">
+          <img src="" alt="Логотип Техномарт.">
+        </a>
+
+        <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
+          <label for="search">
+            <input class="search-input input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+          </label>
+        </form>
+
+        <a class="profile" href="#">Равшан Джамшутович</a>
+
+        <a class="login" href="#">
+          <span class="visually-hidden">Войти в личный аккаунт.</span>
+        </a>
+
+        <div class="popover popover-auth">
+          <div class="popover-wrapper">
+            <div class="popover-logout">
+              <button class="popover-close" type="button">
+                <span class="visually-hidden">Закрыть.</span>
+              </button>
+
+              <p class="popover-title">Личный кабинет</p>
+
+              <form class="auth-form" method="post" action="https://echo.htmlacademy.ru/">
+                <label for="login">
+                  <input class="auth-input input" type="text" name="login" id="login" placeholder="Логин">
+                </label>
+
+                <label for="password">
+                  <input class="auth-input input" type="text" name="password" id="password" placeholder="Пароль">
+                </label>
+
+                <div>
+                  <label for="remember-check">
+                    <input type="checkbox" name="remember-check" id="remember-check" checked>
+                    <span class="remember-text">Запомнить меня</span>
+                  </label>
+
+                  <a href="#">Забыл пароль</a>
+                </div>
+
+                <div>
+                  <button class="auth-submit button button-green" type="submit">Войти</button>
+                  <a class="auth-registration button button-light" href="#">Регистрация</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <a class="logout" href="#">
+          <span class="visually-hidden">Выйти из аккаунта.</span>
+        </a>
+
+        <div class="popover popover-auth">
+          <div class="popover-wrapper">
+            <div class="popover-login">
+              <button class="popover-close" type="button">
+                <span class="visually-hidden">Закрыть.</span>
+              </button>
+
+              <p class="popover-title">Здравствуйте, <br><span class="username">Равшан Джамшутович</span></p>
+
+              <ul class="account-options">
+                <li class="options-item">
+                  <a class="account-link" href="#">Мои заказы</a>
+                </li>
+
+                <li class="options-item">
+                  <a class="account-link" href="#">Личный кабинет</a>
+                </li>
+              </ul>
+
+              <a class="logout-button button button-light" href="#">Выйти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="header-navigation">
+        <ul class="navigation-list list-reset">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Главная</a>
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Компания</a>
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Каталог</a>
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Новости</a>
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Спецпредложения</a>
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Доставка</a>
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="navigation-user list-reset">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-favourite" href="#">
+              <span class="visually-hidden">Избранное</span>
+              <span class="navigation-link-amount">12</span>
+            </a>
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-cart" href="#">
+              <span class="visually-hidden">Корзина</span>
+              <span class="navigation-link-amount">3</span>
+            </a>
+          </li>
+        </ul>
+
+        <button class="order-button button-green button" type="button">Оформить заказ</button>
+      </nav>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+  </div>
+</body>
+
+</html>

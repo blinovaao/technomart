@@ -12,197 +12,204 @@
   <div class="page-container">
     <header class="header">
       <div class="header-info">
-        <p class="header-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <address class="header-contacts">
-          <p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a class="contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </address>
+        <div class="container">
+          <p class="header-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <address class="header-contacts">
+            <p class="contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a class="contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </address>
+        </div>
       </div>
 
-      <div class="header-profile">
-        <a class="header-logo" href="#" aria-current="page">
-          <img src="images/logo-technomart.svg" width="107" height="17" alt="Логотип Техномарт.">
-        </a>
+      <!-- Класс logged-in для авторизованного пользователя, класс logged-out - для неавторизованного -->
+      <div class="header-profile logged-out">
+        <div class="container">
+          <a class="header-logo" href="#" aria-current="page">
+            <img src="images/logo-technomart.svg" width="107" height="17" alt="Логотип Техномарт.">
+          </a>
 
-        <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
-          <label for="search">
-            <input class="search-input input" type="search" name="search" id="search" placeholder="Поиск по сайту">
-          </label>
-        </form>
+          <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
+            <label for="search">
+              <input class="search-input input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+            </label>
+          </form>
 
-        <a class="profile" href="#">Равшан Джамшутович</a>
+          <a class="profile-link" href="#">Равшан Джамшутович</a>
 
-        <a class="login" href="#">
-          <span class="visually-hidden">Войти в личный аккаунт.</span>
-        </a>
+          <div class="login-link-wrapper">
+            <a class="login-link" href="#">Войти</a>
+          </div>
 
-        <div class="popover popover-auth">
-          <div class="popover-wrapper">
-            <div class="popover-logout">
-              <button class="popover-close" type="button">
-                <span class="visually-hidden">Закрыть.</span>
-              </button>
+          <div class="popover popover-auth">
+            <div class="popover-wrapper">
+              <div class="popover-logout">
+                <button class="popover-close" type="button">
+                  <span class="visually-hidden">Закрыть.</span>
+                </button>
 
-              <p class="popover-title">Личный кабинет</p>
+                <p class="popover-title">Личный кабинет</p>
 
-              <form class="auth-form" method="post" action="https://echo.htmlacademy.ru/">
-                <label for="login">
-                  <input class="auth-input input" type="text" name="login" id="login" placeholder="Логин">
-                </label>
-
-                <label for="password">
-                  <input class="auth-input input" type="text" name="password" id="password" placeholder="Пароль">
-                </label>
-
-                <div>
-                  <label for="remember-check">
-                    <input type="checkbox" name="remember-check" id="remember-check" checked>
-                    <span class="remember-text">Запомнить меня</span>
+                <form class="auth-form" method="post" action="https://echo.htmlacademy.ru/">
+                  <label for="login">
+                    <input class="auth-input input" type="text" name="login" id="login" placeholder="Логин" required>
                   </label>
 
-                  <a href="#">Забыл пароль</a>
-                </div>
+                  <label for="password">
+                    <input class="auth-input input" type="text" name="password" id="password" placeholder="Пароль" required>
+                  </label>
 
-                <div>
-                  <button class="auth-submit button button-green" type="submit">Войти</button>
-                  <a class="auth-registration button button-light" href="#">Регистрация</a>
-                </div>
-              </form>
+                  <div class="remember-options">
+                    <label for="remember-check">
+                      <input type="checkbox" name="remember-check" id="remember-check" checked>
+                      <span class="remember-text">Запомнить меня</span>
+                    </label>
+
+                    <a class="remember-password" href="#">Забыл пароль</a>
+                  </div>
+
+                  <div class="auth-buttons">
+                    <button class="auth-submit button button-green" type="submit">Войти</button>
+                    <a class="auth-registration button button-light" href="#">Регистрация</a>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
 
-        <a class="logout" href="#">
-          <span class="visually-hidden">Выйти из аккаунта.</span>
-        </a>
+          <a class="logout-link" href="#">
+            <span class="visually-hidden">Выйти из аккаунта.</span>
+          </a>
 
-        <div class="popover popover-auth">
-          <div class="popover-wrapper">
-            <div class="popover-login">
-              <button class="popover-close" type="button">
-                <span class="visually-hidden">Закрыть.</span>
-              </button>
+          <div class="popover popover-auth">
+            <div class="popover-wrapper">
+              <div class="popover-login">
+                <button class="popover-close" type="button">
+                  <span class="visually-hidden">Закрыть.</span>
+                </button>
 
-              <p class="popover-title">Здравствуйте, <br><span class="username">Равшан Джамшутович</span></p>
+                <p class="popover-title">Здравствуйте, <br><span class="username">Равшан Джамшутович</span></p>
 
-              <ul class="account-options list-reset">
-                <li class="options-item">
-                  <a class="account-link" href="#">Мои заказы</a>
-                </li>
+                <ul class="account-options list-reset">
+                  <li class="options-item">
+                    <a class="account-link" href="#">Мои заказы</a>
+                  </li>
 
-                <li class="options-item">
-                  <a class="account-link" href="#">Личный кабинет</a>
-                </li>
-              </ul>
+                  <li class="options-item">
+                    <a class="account-link" href="#">Личный кабинет</a>
+                  </li>
+                </ul>
 
-              <a class="logout-button button button-light" href="#">Выйти</a>
+                <a class="logout-button button button-light" href="#">Выйти</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <nav class="header-navigation">
-        <ul class="navigation-list list-reset">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
-          </li>
+        <div class="container">
+          <ul class="navigation-list list-reset">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#" aria-current="page">Главная</a>
+            </li>
 
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Компания</a>
-          </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Компания</a>
+            </li>
 
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Каталог</a>
-          </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Каталог</a>
+            </li>
 
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Новости</a>
-          </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Новости</a>
+            </li>
 
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Спецпредложения</a>
-          </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Спецпредложения</a>
+            </li>
 
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка</a>
-          </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Доставка</a>
+            </li>
 
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Контакты</a>
-          </li>
-        </ul>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
 
-        <ul class="navigation-user list-reset">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-bookmark" href="#">
-              <span class="visually-hidden">Закладки.</span>
-              <span class="navigation-link-amount">12</span>
-            </a>
-          </li>
+          <ul class="navigation-user list-reset">
+            <li class="navigation-item navigation-item-bookmark">
+              <a class="navigation-link navigation-link-bookmark" href="#">
+                <span class="visually-hidden">Закладки.</span>
+                <span class="navigation-link-amount">12</span>
+              </a>
+            </li>
 
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-cart" href="#">
-              <span class="visually-hidden">Корзина</span>
-              <span class="navigation-link-amount">3</span>
-            </a>
-          </li>
-        </ul>
+            <li class="navigation-item navigation-item-cart">
+              <a class="navigation-link navigation-link-cart" href="#">
+                <span class="visually-hidden">Корзина</span>
+                <span class="navigation-link-amount">3</span>
+              </a>
+            </li>
+          </ul>
 
-        <button class="order-button button-green button" type="button">Оформить заказ</button>
+          <button class="order-button button-green button" type="button">Оформить заказ</button>
+        </div>
       </nav>
     </header>
 
     <main>
       <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта.</h1>
 
-      <section class="catalog-categories">
+      <section class="catalog-categories container">
         <h2 class="visually-hidden">Разделы каталога.</h2>
 
         <ul class="categories-list list-reset">
-          <li class="categories-item">
+          <li class="categories-item categories-item-materials categories-item-new">
             <span class="categories-title">Материалы</span>
-            <a class="button button-light categories-button" href="#">На любой вкус</a>
+            <a class="button categories-button" href="#">На любой вкус</a>
           </li>
 
-          <li class="categories-item">
+          <li class="categories-item categories-item-tools">
             <span class="categories-title">Инструмент</span>
-            <a class="button button-light categories-button" href="#">На все случаи</a>
+            <a class="button categories-button" href="#">На все случаи</a>
           </li>
 
-          <li class="categories-item">
+          <li class="categories-item categories-item-equipment">
             <span class="categories-title">Техника</span>
-            <a class="button button-light categories-button" href="#">Для стройки</a>
+            <a class="button categories-button" href="#">Для стройки</a>
           </li>
 
-          <li class="categories-item">
-            <section class="slider">
+          <li class="categories-item categories-item-slider">
+            <section class="slider slide-1">
               <h3 class="visually-hidden">Карусель с разновидностями техники.</h3>
 
               <ul class="slider-list list-reset">
-                <li class="slider-item slide-1">
+                <li class="slider-item slider-item-active">
                   <span class="slider-title section-title">Дрели</span>
                   <p class="slider-text">Соседям на радость!</p>
                   <a class="slider-button button button-red" href="#">Открыть каталог</a>
                 </li>
 
-                <li class="slider-item slide-2">
+                <li class="slider-item">
                   <span class="slider-title section-title">Перфораторы</span>
                   <p class="slider-text">Соседям на радость!</p>
                   <a class="slider-button button button-red" href="#">Открыть каталог</a>
                 </li>
 
-                <li class="slider-item slide-3">
+                <li class="slider-item">
                   <span class="slider-title section-title">Перфораторы</span>
                   <p class="slider-text">Соседям на радость!</p>
                   <a class="slider-button button button-red" href="#">Открыть каталог</a>
                 </li>
               </ul>
 
-              <button class="slider-button slider-button-prev" type="button">
+              <button class="slider-arrow slider-arrow-prev" type="button">
                 <span class="visually-hidden">Предыдущий слайд.</span>
               </button>
 
-              <button class="slider-button slider-button-next" type="button">
+              <button class="slider-arrow slider-arrow-next" type="button">
                 <span class="visually-hidden">Следующий слайд.</span>
               </button>
 
@@ -228,25 +235,25 @@
             </section>
           </li>
 
-          <li class="categories-item">
+          <li class="categories-item categories-item-sale">
             <span class="categories-title">Скидки 50%</span>
-            <a class="button button-light categories-button" href="#">На 350 товаров</a>
+            <a class="button categories-button" href="#">На 350 товаров</a>
           </li>
 
-          <li class="categories-item">
+          <li class="categories-item categories-item-delivery">
             <span class="categories-title">Доставка</span>
-            <a class="button button-light categories-button" href="#">Бесплатно</a>
+            <a class="button categories-button" href="#">Бесплатно</a>
           </li>
         </ul>
       </section>
 
-      <section class="catalog">
+      <section class="catalog container">
         <h2 class="catalog-title section-title">Перфораторы</h2>
 
         <div class="catalog-wrapper">
           <div class="filters">
             <form class="filters-form" method="get" action="https://echo.htmlacademy.ru/">
-              <fieldset class="filters-group">
+              <fieldset class="filters-group range-group">
                 <h3 class="filters-title">Цена</h3>
 
                 <div class="filter-range range">
@@ -267,72 +274,74 @@
                   </div>
                 </div>
 
-                <label for="min">
-                  <span class="visually-hidden">Минимальное значение</span>
-                  <input class="range-input" id="min" type="number" value="0" name="min" aria-label="Минимальное значение">
-                </label>
+                <div class="range-inputs-wrapper">
+                  <label class="range-input-min" for="min">
+                    <span class="visually-hidden">Минимальное значение</span>
+                    <input class="range-input" id="min" type="number" value="0" name="min" aria-label="Минимальное значение">
+                  </label>
 
-                <label for="max">
-                  <span class="visually-hidden">Максимальное значение</span>
-                  <input class="range-input" id="max" type="number" value="30000" name="max" aria-label="Максимальное значение">
-                </label>
+                  <label class="range-input-max" for="max">
+                    <span class="visually-hidden">Максимальное значение</span>
+                    <input class="range-input" id="max" type="number" value="30000" name="max" aria-label="Максимальное значение">
+                  </label>
+                </div>
               </fieldset>
 
-              <fieldset class="filters-group">
+              <fieldset class="filters-group checkbox-group">
                 <h3 class="filters-title">Производители</h3>
 
-                <ul class="filters-list list-reset">
+                <ul class="filters-list checkbox-list list-reset">
                   <li class="filters-item">
                     <label for="bosch">
-                      <input class="filters-checkbox" type="checkbox" name="bosch" id="bosch" checked>
+                      <input class="filters-checkbox" type="checkbox" name="manufacture" id="bosch" value="bosch" checked>
                       <span class="filters-label">BOSCH</span>
                     </label>
                   </li>
 
                   <li class="filters-item">
                     <label for="interskol">
-                      <input class="filters-checkbox" type="checkbox" name="interskol" id="interskol">
+                      <input class="filters-checkbox" type="checkbox" name="manufacture" id="interskol" value="interskol">
                       <span class="filters-label">ИНТЕРСКОЛ</span>
                     </label>
                   </li>
 
                   <li class="filters-item">
                     <label for="makita">
-                      <input class="filters-checkbox" type="checkbox" name="makita" id="makita" checked>
+                      <input class="filters-checkbox" type="checkbox" name="manufacture" id="makita" value="makita" checked>
                       <span class="filters-label">MAKIta</span>
                     </label>
                   </li>
 
                   <li class="filters-item">
                     <label for="dewalt">
-                      <input class="filters-checkbox" type="checkbox" name="dewalt" id="dewalt">
+                      <input class="filters-checkbox" type="checkbox" name="manufacture" id="dewalt" value="dewalt">
                       <span class="filters-label">Dewalt</span>
                     </label>
                   </li>
 
                   <li class="filters-item">
                     <label for="hitachi">
-                      <input class="filters-checkbox" type="checkbox" name="hitachi" id="hitachi">
+                      <input class="filters-checkbox" type="checkbox" name="manufacture" id="hitachi" value="hitachi">
                       <span class="filters-label">Hitachi</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
 
-              <fieldset class="filters-group">
+              <fieldset class="filters-group radio-group">
                 <h3 class="filters-title">Питание</h3>
 
-                <ul class="filters-list list-reset">
+                <ul class="filters-list radio-list list-reset">
                   <li class="filters-item">
                     <label for="accumulator">
-                      <input class="filters-checkbox" type="radio" name="powersupply" id="accumulator" checked>
+                      <input class="filters-checkbox" type="radio" name="powersupply" value="accumulator" id="accumulator" checked>
                       <span class="filters-label">Аккумуляторные</span>
                     </label>
                   </li>
 
                   <li class="filters-item">
                     <label for="socket">
-                      <input class="filters-checkbox" type="radio" name="powersupply" id="socket">
+                      <input class="filters-checkbox" type="radio" name="powersupply" value="socket" id="socket">
                       <span class="filters-label">Сетевые</span>
                     </label>
                   </li>
@@ -355,11 +364,11 @@
               <li class="catalog-item catalog-item-new">
                 <a class="catalog-link" href="#">
                   <div class="catalog-image">
-                    <a class="catalog-button button button-green" href="#">Купить</a>
-                    <a class="catalog-button button button-light" href="#">В закладки</a>
-                    <img src="images/catalog-product-1.png" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
+                    <a class="catalog-button-buy button button-green" href="#">Купить</a>
+                    <a class="catalog-button-bookmark button button-light" href="#">В закладки</a>
+                    <img src="images/catalog-product-1.jpg" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
                   </div>
-                  <p class="catalog-item-title">Перфоратор BOSCH BFG 3000</p>
+                  <p class="catalog-item-title">Перфоратор BOSCH <br>BFG 3000</p>
                   <span class="catalog-price">22500 ₽</span>
                   <a class="catalog-discount-price catalog-button" href="#">15500 ₽
                     <span class="visually-hidden">Добавить в корзину.</span>
@@ -370,11 +379,11 @@
               <li class="catalog-item">
                 <a class="catalog-link" href="#">
                   <div class="catalog-image">
-                    <a class="catalog-button button button-green" href="#">Купить</a>
-                    <a class="catalog-button button button-light" href="#">В закладки</a>
-                    <img src="images/catalog-product-1.png" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
+                    <a class="catalog-button-buy button button-green" href="#">Купить</a>
+                    <a class="catalog-button-bookmark button button-light" href="#">В закладки</a>
+                    <img src="images/catalog-product-1.jpg" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
                   </div>
-                  <p class="catalog-item-title">Перфоратор BOSCH BFG 3000</p>
+                  <p class="catalog-item-title">Перфоратор BOSCH <br>BFG 3000</p>
                   <span class="catalog-price">22500 ₽</span>
                   <a class="catalog-discount-price catalog-button" href="#">15500 ₽
                     <span class="visually-hidden">Добавить в корзину.</span>
@@ -385,11 +394,56 @@
               <li class="catalog-item catalog-item-new">
                 <a class="catalog-link" href="#">
                   <div class="catalog-image">
-                    <a class="catalog-button button button-green" href="#">Купить</a>
-                    <a class="catalog-button button button-light" href="#">В закладки</a>
-                    <img src="images/catalog-product-1.png" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
+                    <a class="catalog-button-buy button button-green" href="#">Купить</a>
+                    <a class="catalog-button-bookmark button button-light" href="#">В закладки</a>
+                    <img src="images/catalog-product-1.jpg" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
                   </div>
-                  <p class="catalog-item-title">Перфоратор BOSCH BFG 3000</p>
+                  <p class="catalog-item-title">Перфоратор BOSCH <br>BFG 3000</p>
+                  <span class="catalog-price"></span>
+                  <a class="catalog-discount-price catalog-button" href="#">15500 ₽
+                    <span class="visually-hidden">Добавить в корзину.</span>
+                  </a>
+                </a>
+              </li>
+
+              <li class="catalog-item catalog-item-new">
+                <a class="catalog-link" href="#">
+                  <div class="catalog-image">
+                    <a class="catalog-button-buy button button-green" href="#">Купить</a>
+                    <a class="catalog-button-bookmark button button-light" href="#">В закладки</a>
+                    <img src="images/catalog-product-1.jpg" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
+                  </div>
+                  <p class="catalog-item-title">Перфоратор BOSCH <br>BFG 3000</p>
+                  <span class="catalog-price"></span>
+                  <a class="catalog-discount-price catalog-button" href="#">15500 ₽
+                    <span class="visually-hidden">Добавить в корзину.</span>
+                  </a>
+                </a>
+              </li>
+
+              <li class="catalog-item catalog-item-new">
+                <a class="catalog-link" href="#">
+                  <div class="catalog-image">
+                    <a class="catalog-button-buy button button-green" href="#">Купить</a>
+                    <a class="catalog-button-bookmark button button-light" href="#">В закладки</a>
+                    <img src="images/catalog-product-1.jpg" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
+                  </div>
+                  <p class="catalog-item-title">Перфоратор BOSCH <br>BFG 3000</p>
+                  <span class="catalog-price"></span>
+                  <a class="catalog-discount-price catalog-button" href="#">15500 ₽
+                    <span class="visually-hidden">Добавить в корзину.</span>
+                  </a>
+                </a>
+              </li>
+
+              <li class="catalog-item catalog-item-new">
+                <a class="catalog-link" href="#">
+                  <div class="catalog-image">
+                    <a class="catalog-button-buy button button-green" href="#">Купить</a>
+                    <a class="catalog-button-bookmark button button-light" href="#">В закладки</a>
+                    <img src="images/catalog-product-1.jpg" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
+                  </div>
+                  <p class="catalog-item-title">Перфоратор BOSCH <br>BFG 3000</p>
                   <span class="catalog-price">22500 ₽</span>
                   <a class="catalog-discount-price catalog-button" href="#">15500 ₽
                     <span class="visually-hidden">Добавить в корзину.</span>
@@ -400,56 +454,12 @@
               <li class="catalog-item catalog-item-new">
                 <a class="catalog-link" href="#">
                   <div class="catalog-image">
-                    <a class="catalog-button button button-green" href="#">Купить</a>
+                    <a class="catalog-button-buy button button-green" href="#">Купить</a>
+                    <a class="catalog-button-bookmark button button-light" href="#">В закладки</a>
                     <a class="catalog-button button button-light" href="#">В закладки</a>
-                    <img src="images/catalog-product-1.png" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
+                    <img src="images/catalog-product-1.jpg" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
                   </div>
-                  <p class="catalog-item-title">Перфоратор BOSCH BFG 3000</p>
-                  <span class="catalog-price">22500 ₽</span>
-                  <a class="catalog-discount-price catalog-button" href="#">15500 ₽
-                    <span class="visually-hidden">Добавить в корзину.</span>
-                  </a>
-                </a>
-              </li>
-
-              <li class="catalog-item catalog-item-new">
-                <a class="catalog-link" href="#">
-                  <div class="catalog-image">
-                    <a class="catalog-button button button-green" href="#">Купить</a>
-                    <a class="catalog-button button button-light" href="#">В закладки</a>
-                    <img src="images/catalog-product-1.png" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
-                  </div>
-                  <p class="catalog-item-title">Перфоратор BOSCH BFG 3000</p>
-                  <span class="catalog-price">22500 ₽</span>
-                  <a class="catalog-discount-price catalog-button" href="#">15500 ₽
-                    <span class="visually-hidden">Добавить в корзину.</span>
-                  </a>
-                </a>
-              </li>
-
-              <li class="catalog-item catalog-item-new">
-                <a class="catalog-link" href="#">
-                  <div class="catalog-image">
-                    <a class="catalog-button button button-green" href="#">Купить</a>
-                    <a class="catalog-button button button-light" href="#">В закладки</a>
-                    <img src="images/catalog-product-1.png" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
-                  </div>
-                  <p class="catalog-item-title">Перфоратор BOSCH BFG 3000</p>
-                  <span class="catalog-price">22500 ₽</span>
-                  <a class="catalog-discount-price catalog-button" href="#">15500 ₽
-                    <span class="visually-hidden">Добавить в корзину.</span>
-                  </a>
-                </a>
-              </li>
-
-              <li class="catalog-item catalog-item-new">
-                <a class="catalog-link" href="#">
-                  <div class="catalog-image">
-                    <a class="catalog-button button button-green" href="#">Купить</a>
-                    <a class="catalog-button button button-light" href="#">В закладки</a>
-                    <img src="images/catalog-product-1.png" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
-                  </div>
-                  <p class="catalog-item-title">Перфоратор BOSCH BFG 3000</p>
+                  <p class="catalog-item-title">Перфоратор BOSCH <br>BFG 3000</p>
                   <span class="catalog-price">22500 ₽</span>
                   <a class="catalog-discount-price catalog-button" href="#">15500 ₽
                     <span class="visually-hidden">Добавить в корзину.</span>
@@ -460,11 +470,11 @@
               <li class="catalog-item">
                 <a class="catalog-link" href="#">
                   <div class="catalog-image">
-                    <a class="catalog-button button button-green" href="#">Купить</a>
-                    <a class="catalog-button button button-light" href="#">В закладки</a>
-                    <img src="images/catalog-product-1.png" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
+                    <a class="catalog-button-buy button button-green" href="#">Купить</a>
+                    <a class="catalog-button-bookmark button button-light" href="#">В закладки</a>
+                    <img src="images/catalog-product-1.jpg" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
                   </div>
-                  <p class="catalog-item-title">Перфоратор BOSCH BFG 3000</p>
+                  <p class="catalog-item-title">Перфоратор BOSCH <br>BFG 3000</p>
                   <span class="catalog-price">22500 ₽</span>
                   <a class="catalog-discount-price catalog-button" href="#">15500 ₽
                     <span class="visually-hidden">Добавить в корзину.</span>
@@ -475,12 +485,12 @@
               <li class="catalog-item catalog-item-new">
                 <a class="catalog-link" href="#">
                   <div class="catalog-image">
-                    <a class="catalog-button button button-green" href="#">Купить</a>
-                    <a class="catalog-button button button-light" href="#">В закладки</a>
-                    <img src="images/catalog-product-1.png" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
+                    <a class="catalog-button-buy button button-green" href="#">Купить</a>
+                    <a class="catalog-button-bookmark button button-light" href="#">В закладки</a>
+                    <img src="images/catalog-product-1.jpg" width="216" height="180" alt="Перфоратор BOSCH BFG 3000.">
                   </div>
-                  <p class="catalog-item-title">Перфоратор BOSCH BFG 3000</p>
-                  <span class="catalog-price">22500 ₽</span>
+                  <p class="catalog-item-title">Перфоратор BOSCH <br>BFG 3000</p>
+                  <span class="catalog-price"></span>
                   <a class="catalog-discount-price catalog-button" href="#">15500 ₽
                     <span class="visually-hidden">Добавить в корзину.</span>
                   </a>
@@ -496,8 +506,8 @@
               <a class="pagination-link" href="#">1</a>
             </li>
 
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
+            <li class="pagination-item pagination-item-active">
+              <a class="pagination-link pagination-link-active" href="#">2</a>
             </li>
 
             <li class="pagination-item">
@@ -514,25 +524,27 @@
       </section>
 
       <section class="services">
-        <h2 class="services-title section-title">Сервисы</h2>
-        <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <div class="container">
+          <h2 class="services-title section-title">Сервисы</h2>
+          <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
-        <ul class="services-list list-reset">
-          <li class="services-item">
-            <h3 class="service-title">Доставка</h3>
-            <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-          </li>
+          <ul class="services-list list-reset">
+            <li class="services-item services-item-delivery">
+              <h3 class="service-title">Доставка</h3>
+              <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            </li>
 
-          <li class="services-item">
-            <h3 class="service-title">Гарантия</h3>
-            <p class="service-description">Вы в течение года можете написать нам письмо с просьбой вернуть сумму оплаты, и мы полностью возместим вам стоимось товара</p>
-          </li>
+            <li class="services-item services-item-guarantee">
+              <h3 class="service-title">Гарантия</h3>
+              <p class="service-description">Вы в течение года можете написать нам письмо с просьбой вернуть сумму оплаты, и мы полностью возместим вам стоимость товара</p>
+            </li>
 
-          <li class="services-item">
-            <h3 class="service-title">Кредит</h3>
-            <p class="service-description">Вы можете оформить кредит прямо на сайте! Для этого нужно выбрать понравившийся товар и заполнить поля и ждать результата одобрения кредита. Все как в банке, только проще!</p>
-          </li>
-        </ul>
+            <li class="services-item services-item-credit">
+              <h3 class="service-title">Кредит</h3>
+              <p class="service-description">Вы можете оформить кредит прямо на сайте! Для этого нужно выбрать понравившийся товар и заполнить поля и ждать результата одобрения кредита. <br>Все как в банке, только проще!</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <div class="about-contacts-wrapper">

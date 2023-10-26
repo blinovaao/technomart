@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   <link href="styles/style.css" rel="stylesheet">
   <title>Техномарт</title>
 </head>
@@ -30,7 +32,7 @@
 
           <form class="search-form" method="get" action="https://echo.htmlacademy.ru/">
             <label for="search">
-              <input class="search-input input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+              <input class="search-input input" type="search" name="search" id="search" placeholder="Поиск по сайту" required>
             </label>
           </form>
 
@@ -38,68 +40,70 @@
 
           <div class="login-link-wrapper">
             <a class="login-link" href="#">Войти</a>
-          </div>
 
-          <div class="popover popover-auth">
-            <div class="popover-wrapper">
-              <div class="popover-logout">
-                <button class="popover-close" type="button">
-                  <span class="visually-hidden">Закрыть.</span>
-                </button>
+            <div class="popover popover-auth">
+              <div class="popover-wrapper">
+                <div class="popover-logout">
+                  <button class="popover-close" type="button">
+                    <span class="visually-hidden">Закрыть.</span>
+                  </button>
 
-                <p class="popover-title">Личный кабинет</p>
+                  <p class="popover-title">Личный кабинет</p>
 
-                <form class="auth-form" method="post" action="https://echo.htmlacademy.ru/">
-                  <label for="login">
-                    <input class="auth-input input" type="text" name="login" id="login" placeholder="Логин" required>
-                  </label>
-
-                  <label for="password">
-                    <input class="auth-input input" type="text" name="password" id="password" placeholder="Пароль" required>
-                  </label>
-
-                  <div class="remember-options">
-                    <label for="remember-check">
-                      <input type="checkbox" name="remember-check" id="remember-check" checked>
-                      <span class="remember-text">Запомнить меня</span>
+                  <form class="auth-form" method="post" action="https://echo.htmlacademy.ru/">
+                    <label for="login">
+                      <input class="auth-input input" type="text" name="login" id="login" placeholder="Логин" required>
                     </label>
 
-                    <a class="remember-password" href="#">Забыл пароль</a>
-                  </div>
+                    <label for="password">
+                      <input class="auth-input input" type="text" name="password" id="password" placeholder="Пароль" required>
+                    </label>
 
-                  <div class="auth-buttons">
-                    <button class="auth-submit button button-green" type="submit">Войти</button>
-                    <a class="auth-registration button button-light" href="#">Регистрация</a>
-                  </div>
-                </form>
+                    <div class="remember-options">
+                      <label for="remember-check">
+                        <input type="checkbox" name="remember-check" id="remember-check" checked>
+                        <span class="remember-text">Запомнить меня</span>
+                      </label>
+
+                      <a class="remember-password" href="#">Забыл пароль</a>
+                    </div>
+
+                    <div class="auth-buttons">
+                      <button class="auth-submit button button-green" type="submit">Войти</button>
+                      <a class="auth-registration button button-light" href="#">Регистрация</a>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
 
-          <a class="logout-link" href="#">
-            <span class="visually-hidden">Выйти из аккаунта.</span>
-          </a>
+          <div class="logout-link-wrapper">
+            <a class="logout-link" href="#">
+              <span class="visually-hidden">Выйти из аккаунта.</span>
+            </a>
 
-          <div class="popover popover-auth">
-            <div class="popover-wrapper">
-              <div class="popover-login">
-                <button class="popover-close" type="button">
-                  <span class="visually-hidden">Закрыть.</span>
-                </button>
+            <div class="popover popover-auth">
+              <div class="popover-wrapper">
+                <div class="popover-login">
+                  <button class="popover-close" type="button">
+                    <span class="visually-hidden">Закрыть.</span>
+                  </button>
 
-                <p class="popover-title">Здравствуйте, <br><span class="username">Равшан Джамшутович</span></p>
+                  <p class="popover-title">Здравствуйте, <br><span class="username">Равшан Джамшутович</span></p>
 
-                <ul class="account-options list-reset">
-                  <li class="options-item">
-                    <a class="account-link" href="#">Мои заказы</a>
-                  </li>
+                  <ul class="account-options list-reset">
+                    <li class="options-item">
+                      <a class="account-link" href="#">Мои заказы</a>
+                    </li>
 
-                  <li class="options-item">
-                    <a class="account-link" href="#">Личный кабинет</a>
-                  </li>
-                </ul>
+                    <li class="options-item">
+                      <a class="account-link" href="#">Личный кабинет</a>
+                    </li>
+                  </ul>
 
-                <a class="logout-button button button-light" href="#">Выйти</a>
+                  <a class="logout-button button button-light" href="#">Выйти</a>
+                </div>
               </div>
             </div>
           </div>
@@ -138,6 +142,7 @@
             </li>
           </ul>
 
+          <!-- Класс navigation-user-logged-in для авторизованного пользователя -->
           <ul class="navigation-user list-reset">
             <li class="navigation-item navigation-item-bookmark">
               <a class="navigation-link navigation-link-bookmark" href="#">
@@ -277,12 +282,12 @@
                 <div class="range-inputs-wrapper">
                   <label class="range-input-min" for="min">
                     <span class="visually-hidden">Минимальное значение</span>
-                    <input class="range-input" id="min" type="number" value="0" name="min" aria-label="Минимальное значение">
+                    <input class="range-input" id="min" type="number" value="0" name="min" aria-label="Минимальное значение" disabled>
                   </label>
 
                   <label class="range-input-max" for="max">
                     <span class="visually-hidden">Максимальное значение</span>
-                    <input class="range-input" id="max" type="number" value="30000" name="max" aria-label="Максимальное значение">
+                    <input class="range-input" id="max" type="number" value="30000" name="max" aria-label="Максимальное значение" disabled>
                   </label>
                 </div>
               </fieldset>
@@ -506,8 +511,8 @@
               <a class="pagination-link" href="#">1</a>
             </li>
 
-            <li class="pagination-item pagination-item-active">
-              <a class="pagination-link pagination-link-active" href="#">2</a>
+            <li class="pagination-item pagination-item-current">
+              <a class="pagination-link pagination-link-current" href="#">2</a>
             </li>
 
             <li class="pagination-item">
@@ -608,7 +613,7 @@
             <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
               <label for="subscribe-email">
                 <span class="visually-hidden">Впишите адрес электронной почты для подписки.</span>
-                <input class="subscribe-input input" type="email" name="subscribe-email" id="subscribe-email" placeholder="email@example.com">
+                <input class="subscribe-input input" type="email" name="subscribe-email" id="subscribe-email" placeholder="email@example.com" required>
               </label>
               <button class="subscribe-submit button button-green" type="submit">
                 <span class="visually-hidden">Отправить.</span>
